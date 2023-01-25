@@ -11,7 +11,9 @@ document.querySelector('#bt').addEventListener('click', function () {
             if (data && data.trips) {
                 let tripsList = '';
                 for (let trip of data.trips) {
-                    tripsList += `<p>Departure: ${trip.departure} - Arrival: ${trip.arrival} - Date: ${trip.date} - Price: ${trip.price}</p>`;
+                    const newDate = new Date(trip.date)
+                    const tripDate = newDate.getHours() + ":" + newDate.getMinutes();
+                    tripsList += `<div id="trip"><p>${trip.departure}>${trip.arrival} ${tripDate} ${trip.price}€</p><button id="addBook">Book</button></div>`;
                 }
                 resultContainer.innerHTML = tripsList;
             } else {
@@ -22,4 +24,8 @@ document.querySelector('#bt').addEventListener('click', function () {
                                             <span>No trip found.</span>`;
             }
         })
-});
+    });
+
+document.querySelectorall('#addBook').addEventListener('click', function () {
+
+})

@@ -10,11 +10,11 @@
 <body>
     <div id="header">
         <div id="headerLeft">
-            <h1 id="titre">Tickethack</h1>
+            <h1><a id="titre"href="Index.html">Tickethack</a></h1>
         </div>
         <div id="headerRight">
-            <h2>Cart</h2>
-            <h2>Bookings</h2>
+            <h2><a href="cart.html">Cart</a></h2>
+            <h2><a href="booking.html">Bookings</a></h2>
         </div>
     </div>
     <div id="homeMsg">
@@ -23,14 +23,17 @@
     </div>
     <div id="body">
         <div id="bodyLeft">
-            <input type="text" placeholder="Departure" id="">
+            <input type="text" placeholder="Departure" id="departure">
             <input type="text" placeholder="Arrival" id="arrival">
-            <input type="date" name="" id="">
-            <button>Search</button>
+            <input type="date" id="Date">
+            <button id="bt">Search</button>
         </div>
         <div id="bodyRight">
-            <img src="/images/train.png" alt="train">
-            <p></p>
+            <img id="train" src="/images/train.png" alt="train">
+            <br>
+            <div class="green-bar"></div>
+            <br>
+            <span>it's time to book your futur trip.</span>
         </div>
     </div>
     <script src="script.js"></script>

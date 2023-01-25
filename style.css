@@ -22,14 +22,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: -450px;
 }
 
 #headerRight {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: -450px;
 }
 
 h2 {
@@ -42,7 +40,7 @@ a {
 }
 
 #titre {
-    color: rgb(59, 209, 126);
+    color:#019875;
 }
 
 #titre:hover {
@@ -62,9 +60,10 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 50px;
 }
-
+#space {
+    height: 50px
+}
 #bodyLeft {
     display: flex;
     flex-direction: column;
@@ -75,16 +74,18 @@ a {
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-right: -300px;
-}
 
+}
 #departure {
-    margin-top: -10px;
+    width: 250px;
+    border-bottom-color: #019875;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+#arrival {
+    width: 250px;
 }
 
-#arrival {
-    margin-top: -50px;
-}
 
 #bodyRight {
     display: flex;
@@ -98,7 +99,7 @@ a {
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: -300px;
+    overflow: scroll;
 }
 
 input {
@@ -109,13 +110,20 @@ input {
 }
 
 #bt {
-    background-color: rgb(127, 224, 127);
+    background-color: #019875 ;
     border-radius: 5px;
     height: 30px;
     border: none;
-    margin-bottom: -10px;
+    color: white;
 }
 
+#addBook {
+    background-color:#019875 ;
+    color: white;
+}
+#addBook:hover{
+    cursor: pointer;
+}
 #bt:hover{
     cursor: pointer;
 }
@@ -129,5 +137,5 @@ input {
     width: 200px;
     height: 5px;
     border-radius: 5px;
-    background-color: rgb(120, 242, 169);
+    background-color: #019875;
 }

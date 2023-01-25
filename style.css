@@ -10,13 +10,15 @@ body {
 #header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    
     background-color: white;
     height: 1vh;
     padding: 25px 25px 25px 25px;
 }
 
-
+#headerstart {
+display: flex;
+}
 
 #headerLeft {
     display: flex;
@@ -25,8 +27,9 @@ body {
 }
 
 #headerRight {
+    width: 1300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -46,7 +49,11 @@ a {
 #titre:hover {
     cursor: pointer;
 }
-
+#content{
+    display: flex;
+    justify-content: space-around;
+    width: 800px
+}
 #homeMsg {
     display: flex;
     flex-direction: column;
@@ -101,6 +108,13 @@ a {
     padding-right: 10px;
     overflow: scroll;
 }
+#trip {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    align-items: center;
+
+}
 
 input {
     border: none;
@@ -120,6 +134,9 @@ input {
 #addBook {
     background-color:#019875 ;
     color: white;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
 }
 #addBook:hover{
     cursor: pointer;

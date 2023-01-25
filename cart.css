@@ -26,7 +26,7 @@ display: flex;
 }
 
 #headerRight {
-    width: 1300px;
+    width: 1700px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -48,6 +48,7 @@ display: flex;
     align-items: center;
     border-radius: 5px;
 }
+
 h2 {
     padding-right: 20px;
 }
